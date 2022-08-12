@@ -1,0 +1,50 @@
+.WHP {
+	text-align: left;
+	margin-bottom: 1%;
+}
+.PR {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 5%;
+	margin-bottom: 6%;
+}
+.PRData {
+	width: 100%;
+	height: 90%;
+}
+.PRData div:nth-child(1) {
+	width: 100%;
+	height: 70%;
+}
+.PRData div:nth-child(2) {
+	width: 100%;
+	/* margin-top: 1%; */
+	height: 30%;
+}
+.PRData img {
+	width: 100%;
+	height: 100%;
+}
+.ATCBtn {
+	width: 100%;
+	height: 10%;
+}
+.ATCBtn button {
+	width: 100%;
+	height: 100%;
+}
+.GTH {
+	margin-bottom: 2%;
+}
+.GTH p {
+	margin-top: 1%;
+	margin-left: 40%;
+	margin-bottom: 2%;
+}
+.GTH button {
+	width: 15%;
+	height: 35px;
+	border: 2px solid black;
+	background-color: white;
+	margin-left: 43%;
+}

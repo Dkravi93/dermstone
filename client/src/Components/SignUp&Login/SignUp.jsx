@@ -27,7 +27,7 @@ export const SignUp = () => {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		await axios.post("http://localhost:3002/api/register", formData)
+		await axios.post("https://dermstone-app.herokuapp.com//api/register", formData)
 		.then(response => {
 			console.log(response);
 			navigate("/login");

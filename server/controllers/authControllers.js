@@ -100,7 +100,7 @@ const isAuthenticate = catchAsync(async (req,res,next) => {
 });
 
 const cartAuthenticate = catchAsync(async (req,res,next) => {
-     console.log("fhjfh",req.headers.authorization);
+    
     if (!req.body.headers.authorization)
     return res.status(400).send({
       message12: "Token is not authorized",
@@ -137,7 +137,7 @@ const cartAuthenticate = catchAsync(async (req,res,next) => {
 });
 
 const cartAuthenticate2 = catchAsync(async (req,res,next) => {
-    console.log("fhjfh",req.headers.authorization);
+
    if (!req.headers.authorization)
    return res.status(400).send({
      message12: "Token is not authorized",

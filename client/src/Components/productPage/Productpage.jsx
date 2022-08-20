@@ -79,7 +79,7 @@ export const ProductPage = () => {
 
   async function getData() {
     await axios
-      .get("http://localhost:3002/api/products", {
+      .get("https://dermstone-app.herokuapp.com//api/products", {
         headers: {
           Authorization: JSON.parse(localStorage.getItem("userToken")),
         },
@@ -123,7 +123,7 @@ export const ProductPage = () => {
   const addToCart = async (data) => {
     await axios
       .post(
-        "http://localhost:3002/api/cart",
+        "https://dermstone-app.herokuapp.com//api/cart",
         {
           headers: headers,
           data
@@ -138,7 +138,7 @@ export const ProductPage = () => {
   };
 
   const handleBrand = () => {
-    axios.get(`http://localhost:3002/api/products`).then(({ data }) => {
+    axios.get(`https://dermstone-app.herokuapp.com//api/products`).then(({ data }) => {
       setItems(data);
     });
   };

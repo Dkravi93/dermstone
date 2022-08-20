@@ -26,7 +26,7 @@ export const Login = () => {
 		event.preventDefault();
 		let flag = false;
 
-        await axios.post("http://localhost:3002/api/login", loginData).then((res)=> {
+        await axios.post("https://dermstone-app.herokuapp.com//api/login", loginData).then((res)=> {
             const token = res.data.token;
             const data = res.data;			
 			localStorage.setItem("userData", JSON.stringify(data));
